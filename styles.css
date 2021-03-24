@@ -1,0 +1,17 @@
+
+body{
+    display: flex;
+    flex-flow: row wrap;
+    margin: 0px;
+}
+
+aside {
+    background-color: blue;
+    width: 25%;
+    height: 10vh;
+}
+
+.main {
+    background-color: green;
+    width: 75%;
+}
