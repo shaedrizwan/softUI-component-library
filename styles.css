@@ -1,32 +1,48 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
-body{
-    display: grid;
-    grid-template-columns: 20% 80%;
-    margin: 0px;
-    height: 100vh;
+html, body {
+    height: 100%;
+    background: #e0e5eb;
     font-family: 'Poppins', sans-serif;
 }
 
-.v-nav {
-background-color: #F1F2F6;
-box-shadow: 7px 0px 10px #000000;
-display: flex;
-flex-direction: column;
-justify-content: center;
-align-items: center;
-}
-
-.main {
-background: #e0e5eb;
-padding: 2rem 1rem;
+nav {
+    width: 250px;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.1);
+    box-shadow: 5px 7px 10px rgba(112, 109, 109, 0.5);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .vnav-items {
     font-size: 1.3rem;
     font-weight: bold;
     padding: 1rem 0rem 0rem;
+    cursor: pointer;
+}
+
+.vnav-items:hover{
+    text-decoration: underline;
+}
+
+.vnav-items:active{
+    text-decoration: underline;
+}
+
+.main {
+    margin-left: 300px;
+    padding: 20px 20px 100px 10px;
 }
 
 .categories {
@@ -40,4 +56,8 @@ padding: 2rem 1rem;
 
 .main > h2 {
     padding: 2rem;
+}
+
+.title {
+    font-size: 2.5rem;
 }

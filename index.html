@@ -4,27 +4,26 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SoftUI</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="softui.css">
+    <title>SoftUI Components</title>
 </head>
 <body>
-    <div class="v-nav">
-        <div class="vnav-items">Navigation</div>
-        <div class="vnav-items">Buttons</div>
-        <div class="vnav-items">Avatar</div>
-        <div class="vnav-items">Alert</div>
-        <div class="vnav-items">Badges</div>
-        <div class="vnav-items">Images</div>
+    <nav>
         <div class="vnav-items">Cards</div>
+        <div class="vnav-items">Avatar</div>
+        <div class="vnav-items">Buttons</div>
+        <div class="vnav-items">Modal</div>
+        <div class="vnav-items">Badges</div>
         <div class="vnav-items">Forms</div>
         <div class="vnav-items">Toast</div>
-        <div class="vnav-items">Modal</div>
+        <div class="vnav-items">Alert</div>
         <div class="vnav-items">Typography</div>
-        <div class="vnav-items">List Group</div>
-    </div>
+        <div class="vnav-items">Images</div>
+        <div class="vnav-items">List Group </div>
+    </nav>
     <div class="main">
-        <h2>Cards</h2>
+        <h2 class="title">Cards</h2>
         <div class="categories">
             <div class="card card-pr">
                 <div class="card-title">Card Title</div>
@@ -52,24 +51,24 @@
                 <div class="card-body">Cards are a convenient means of displaying content composed of different types of objects. They’re also well-suited for presenting similar objects whose size or supported actions can vary considerably, like photos with captions of variable length.</div>
             </div>
         </div>
-        <h2>Avatar</h2>
+        <h2 class="title">Avatar</h2>
         <div class="categories">
-            <img src="https://images.pexels.com/photos/4355346/pexels-photo-4355346.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="avatar" class="avatar-xs">
-            <img src="https://images.pexels.com/photos/4355346/pexels-photo-4355346.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="avatar" class="avatar-s">
-            <img src="https://images.pexels.com/photos/4355346/pexels-photo-4355346.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="avatar" class="avatar-m">
-            <img src="https://images.pexels.com/photos/4355346/pexels-photo-4355346.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="avatar" class="avatar-l">
+            <img src="https://images.pexels.com/photos/4355346/pexels-photo-4355346.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="avatar" class="avatar avatar-xs">
+            <img src="https://images.pexels.com/photos/4355346/pexels-photo-4355346.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="avatar" class="avatar avatar-s">
+            <img src="https://images.pexels.com/photos/4355346/pexels-photo-4355346.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="avatar" class="avatar avatar-m">
+            <img src="https://images.pexels.com/photos/4355346/pexels-photo-4355346.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="avatar" class="avatar avatar-l">
         </div>
-        <h2>Buttons</h2>
+        <h2 class="title">Buttons</h2>
         <div class="categories">
-            <div class="btn-pr">Submit</div>
-            <div class="btn-sec">Submit</div>
-            <div class="btn-inf">Submit</div>
-            <div class="btn-scs">Submit</div>
-            <div class="btn-wrn">Submit</div>
-            <div class="btn-dgr">Submit</div>
+            <div class="btn btn-pr">Submit</div>
+            <div class="btn btn-sec">Submit</div>
+            <div class="btn btn-inf">Submit</div>
+            <div class="btn btn-scs">Submit</div>
+            <div class="btn btn-wrn">Submit</div>
+            <div class="btn btn-dgr">Submit</div>
         </div>
 
-        <h2>Modal</h2>
+        <h2 class="title">Modal</h2>
         <div class="modal">
             <div class="modal-title">This is the Title</div>
             <div class="modal-msg">The Modal plugin is a dialog box/popup window that is displayed on top of the current</div>
@@ -79,7 +78,7 @@
             </div>
         </div>
 
-        <h2>Badges</h2>
+        <h2 class="title">Badges</h2>
         <div class="categories">
             <div class="badge">
                 <div class="badge-notif">2</div>
@@ -90,34 +89,34 @@
                 <div class="badge-text">Notifications</div>
             </div>
         </div>
-        <h2>Forms</h2>
+        <h2 class="title">Forms</h2>
         <div>
             <input class="form-input" type="text" placeholder="Enter your Name">
             <input class="form-input" type="text" placeholder="Enter your email">
             <input class="form-input" type="password" placeholder="Enter your Password">
-            <select class="form-dropdown" name="cars" id="cars">
-                <option value="volvo">Select your option</option>
-                <option value="saab">Saab</option>
+            <select class="form-input" name="cars" id="cars">
+                <option value="select">Select your option</option>
+                <option value="bmw">BMW</option>
                 <option value="mercedes">Mercedes</option>
                 <option value="audi">Audi</option>
               </select>
         </div>
         
-        <h2>Toast</h2>
+        <h2 class="title">Toast</h2>
         <div class="toast">
             <div class="toast-x">X</div>
             <div class="toast-heading">Toast Heading</div>
             <div class="toast-body">Toast is a small message that shows up in a box at the bottom of the screen and disappears on its own after few seconds. It is a simple feedback about an operation in which current activity remains visible and interactive.</div>
         </div>
-        <h2>Alert</h2>
+        <h2 class="title">Alert</h2>
         <div class="categories">
-            <div class="alert-inf">This is an Info Alert</div>
-            <div class="alert-wrn">This is a Warning Alert</div>
-            <div class="alert-scs">This is a Success Alert</div>
-            <div class="alert-dgr">This is a Danger Alert</div>
+            <div class="alert alert-inf">This is an Info Alert</div>
+            <div class="alert alert-wrn">This is a Warning Alert</div>
+            <div class="alert alert-scs">This is a Success Alert</div>
+            <div class="alert alert-dgr">This is a Danger Alert</div>
         </div>
         
-        <h2>Typography</h2>
+        <h2 class="title">Typography</h2>
         <div class="headings">
             <h1>HEADING 1</h1>
             <h2>HEADING 2</h2>
@@ -126,14 +125,13 @@
             <h5>HEADING 5</h5>
             <h6>HEADING 6</h6>
         </div>
-        <h2>Images</h2>
+        <h2 class="title">Images</h2>
         <div class="categories">
             <img src="https://images.pexels.com/photos/54283/pexels-photo-54283.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="thumbnail image" class="img-thumb">
             <img src="https://images.pexels.com/photos/54283/pexels-photo-54283.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="thumbnail image" class="img-s">
             <img src="https://images.pexels.com/photos/54283/pexels-photo-54283.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="thumbnail image" class="img-m">
-            <img src="https://images.pexels.com/photos/54283/pexels-photo-54283.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="thumbnail image" class="img-l">
         </div>
-        <h2>List Group</h2>
+        <h2 class="title">List Group</h2>
         <ul class="lists">
             <h3>List Title</h3>
             <li>This is item 1</li>
@@ -143,5 +141,6 @@
         </ul>
         
     </div>
+    
 </body>
 </html>
