@@ -1,0 +1,90 @@
+header {
+	position: fixed;
+	z-index: 10;
+	left: 0;
+	right: 0;
+	top: 0;
+	padding: 0 5%;
+	height: 100px;
+	background-color: #ececee;
+}
+header .logo {
+	height: 100%;
+	display: flex;
+	align-items: center;
+	font-size: 24px;
+	color: #000;
+	float: none;
+	width: auto;
+	justify-content: center;
+}
+header .links {
+	padding: 0;
+	margin: 0;
+	display: flex;
+	align-items: center;
+    float: none;
+	position: fixed;
+	z-index: 9;
+	left: 0;
+	right: 0;
+	top: 100px;
+	bottom: 100%;
+	width: auto;
+	height: auto;
+	flex-direction: column;
+	justify-content: space-evenly;
+	background-color: rgba(0,0,0,.8);
+	overflow: hidden;
+	box-sizing: border-box;
+	transition: all .5s ease-in-out;
+}
+header .links li {
+	list-style: none;
+}
+header .links a {
+	display: block;
+	padding: 0.5em;
+	font-weight: 600px;
+	color: #fff;
+	text-decoration: none;
+    font-size: 15px;
+}
+#nav-toggle {
+	position: absolute;
+	top: -100px;
+}
+header .icon-burger {
+	display: block;
+	position: absolute;
+	right: 5%;
+	top: 50%;
+	transform: translateY(-50%);
+}
+header .icon-burger .line {
+	width: 30px;
+	height: 5px;
+	background-color: #000;
+	margin: 5px;
+	border-radius: 3px;
+	transition: all .3s ease-in-out;
+}
+
+header :checked ~ .links {
+    bottom: 0;
+}
+header :checked ~ .icon-burger .line:nth-child(1) {
+    transform: translateY(10px) rotate(225deg);
+}
+header :checked ~ .icon-burger .line:nth-child(3) {
+    transform: translateY(-10px) rotate(-225deg);
+}
+header :checked ~ .icon-burger .line:nth-child(2) {
+    opacity: 0;
+}
+
+@media (min-width:800px){
+    header{
+        display: none;
+    }
+}
