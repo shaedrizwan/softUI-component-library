@@ -30,6 +30,8 @@ nav {
     font-weight: bold;
     padding: 1rem 0rem 0rem;
     cursor: pointer;
+    text-decoration: none;
+    color: black;
 }
 
 .vnav-items:hover{
