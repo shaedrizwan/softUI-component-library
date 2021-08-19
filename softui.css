@@ -1,43 +1,57 @@
+*{
+    --primary-color : #cfd7e6;
+    --secondary-color : #f7f7f7;
+    --info-color: #b1a2d6;
+    --success-color: #68c086;
+    --warning-color: #dab641;
+    --error-color: linear-gradient(145deg, #ff2e2e, #de2727);
+}
+
 .btn{
     border-radius: 1.5rem;
-    margin: 2rem;
-    padding: 1rem 2rem;
+    margin: 5px;
+    padding: 1rem 1.5rem;
+    border: none;
     text-align: center;
+    height: 30px;
+    font-weight: bold;
+    cursor: pointer;
+    text-decoration: none;
 }
 
 .btn-pr {
     
-    background: #cfd7e6;
+    background: var(--primary-color);
     box-shadow:  11px 11px 22px #9fa4ad,
                  -7px -7px 22px #ffffff;
 }
 
 .btn-sec {
-    background: #f7f7f7;
+    background: var(--secondary-color);
     box-shadow:  11px 11px 22px #a3a4a796,
                  -7px -7px 22px #dbd5d5;
 }
 
 .btn-inf {
-    background: #b1a2d6;
+    background: var(--info-color);
     box-shadow:  11px 11px 22px #6e7177bd,
                  -7px -7px 22px #ffffff;
 }
 
 .btn-scs {
-    background: #68c086;
+    background: var(--success-color);
     box-shadow:  11px 11px 22px #888b91a2,
                  -7px -7px 22px #ffffff;
 }
 
 .btn-wrn {
-    background: #dab641;
+    background: var(--warning-color);
     box-shadow:  11px 11px 22px #6969649a,
                  -7px -7px 22px #ffffff;
 }
 
 .btn-dgr {
-    background: linear-gradient(145deg, #ff2e2e, #de2727);
+    background: var(--error-color);
     box-shadow:  11px 11px 22px #5a5e66c0,
                  -7px -7px 22px #ebe0e0;
 }
@@ -56,22 +70,22 @@
 
 .alert-inf {
     color: white;
-    background: #b8a4e5;
+    background: var(--info-color);
 }
 
 .alert-dgr {
     color: white;
-    background: #da5656;
+    background: var(--error-color);
 }
 
 .alert-wrn {
     color: white;
-    background: #dab641;
+    background: var(--warning-color);
 }
 
 .alert-scs {
     color: white;
-    background: #68c086;
+    background: var(--success-color);
 }
 
 
@@ -115,12 +129,12 @@
 }
 
 .card-pr {
-    background-color: black;
-    color: white;
+    background-color: var(--primary-color);
+    color: black;
 }
 
 .card-sec{
-    background-color: #f7f7f7;
+    background-color: var(--secondary-color);
 }
 
 .card-sec > .card-title {
@@ -128,11 +142,11 @@
 }
 
 .card-scs {
-    background-color: #56c97c;;
+    background-color: var(--success-color);;
 }
 
 .card-wrn {
-    background-color: #dfbc4b;
+    background-color: var(--warning-color);
 }
 
 
@@ -223,11 +237,11 @@
 .modal-btns-pr{
     border-radius: 1rem;
     box-shadow:  11px 11px 22px #27272791,
-                 -7px -7px 22px #fcfcfcc2;
+                 -7px -7px 22px #808080c2;
     margin: 1rem;
     text-align: center;
     color: white;
-    background: black;
+    background: var(--primary-color);
     padding: 0.5rem 1rem;
 }
 
@@ -238,12 +252,14 @@
     margin: 1rem;
     text-align: center;
     color: rgb(0, 0, 0);
-    background: rgb(224, 216, 216);
+    background: var(--secondary-color);
     padding: 0.5rem 1rem;
 }
 
 .title-h1{
    color: #000000;
+   font-size: 2rem;
+   font-weight: bold;
    text-shadow: 
    -8px -8px 12px rgb(255, 255, 255),
    8px 8px 12px rgba(119, 98, 98, 0.336);
@@ -252,6 +268,7 @@
 
 .title-h2{
     color: #000000;
+    font-size: 1.5rem;
     text-shadow: 
     -8px -8px 12px rgb(255, 255, 255),
     8px 8px 12px rgba(119, 98, 98, 0.336);

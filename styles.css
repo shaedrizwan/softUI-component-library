@@ -34,6 +34,11 @@ nav {
     color: black;
 }
 
+.vnav-home{
+    margin-bottom: 2rem;
+    font-size: 2rem;
+}
+
 .vnav-items:hover{
     text-decoration: underline;
 }
